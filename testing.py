@@ -23,7 +23,7 @@ class Get_IP:
         ip = self.get_ip_address()
         sb_button = st.button('Submit')
         if sb_button:
-            st.write(f'Your name is {name} and email address is {em}')
+            st.write(f'Your name is {name} and email address is {em} and your IP address is {ip}')
             self.cursor.execute('''CREATE TABLE IF NOT EXISTS User (
                                 id INTEGER PRIMARY KEY,
                                 Name TEXT,
